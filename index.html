@@ -7,9 +7,40 @@
     <style>
         header {
             /* place image */
-            background: url(images/central_park.jpg) 0 -200px;
-            background-size: 1500px; 
-            height: 400px
+            /* Use the image as decorative background so other content can sit over it (slide 11) */
+      background: url(images/central_park.jpg) 0 -200px no-repeat; /* position + no-repeat (slides 13 & 16) */
+      background-size: 1500px;  /* scale the large image down (slide 13) */
+      height: 400px;            /* give the header space so the image shows (slide 11) */
+
+      /* Slides 18 & 20: Make the site name readable and positioned within the photo */
+      color: #fff;              /* white text over the photo */
+      font-size: 60px;          /* make brand text stand out */
+      font-weight: bold;        /* bolder headline */
+      font-family: Arial, Helvetica, sans-serif; /* simple sans-serif stack */
+      padding-top: 100px;       /* push text down inside the header box */
+      padding-left: 100px;      /* push text to the right inside the header box */
+      margin: 0;                /* reset default margins just in case */
+
+      /* Slides 22–23: Turn the vertical bullet list into a horizontal menu */
+    nav ul {
+      margin: 0;                /* remove UL default spacing */
+      padding: 0;
+    }
+    nav li {
+      list-style-type: none;    /* remove bullets (slide 22) */
+      display: inline;          /* horizontal instead of vertical (slide 22) */
+      padding: 0 20px;          /* add spacing between items (slide 23) */
+    }
+
+    /* Slide 23: Style links + remove underline.
+       IMPORTANT: keep the order link → visited → hover → active or it won’t work. */
+    nav a {
+      text-decoration: none;    /* remove the default underline */
+    }
+    nav a:link    { color: #418bd3; }  /* before click */
+    nav a:visited { color: #333333; }  /* after click */
+    nav a:hover   { color: #7aacc7; }  /* mouse over */
+    nav a:active  { color: #753a30; }  /* mouse down */
         }
     </style>
 </head>
