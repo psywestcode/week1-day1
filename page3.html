@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Page 3 - Demo 2C</title>
+  <title>Page 3</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +11,10 @@
 
     <nav>
       <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="page3.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="page3.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -22,42 +22,38 @@
       <h1>Signup</h1>
       <p>Please complete the form below.</p>
 
-      <!-- Form added per slides: action/method, fieldset/legend, inputs, radios, select, textarea, submit -->
       <form action="#" method="post">
         <fieldset>
           <legend>Sign Up</legend>
 
           <!-- Text fields -->
-          <label for="name">Name:</label>
-          <input id="name" name="name" type="text" required><br>
+          <label for="name">Enter your full name</label>
+          <input id="name" name="name" type="text" required>
 
-          <label for="email">Email:</label>
-          <input id="email" name="email" type="email" required><br>
+          <label for="email">Enter your email</label>
+          <input id="email" name="email" type="email" required>
 
-          <label for="phone">Phone:</label>
-          <input id="phone" name="phone" type="tel"><br>
+          <label for="phone">Enter your phone</label>
+          <input id="phone" name="phone" type="tel">
 
           <!-- Radio buttons -->
-          <br>
-          <span>Gender:</span>
-          <label><input type="radio" name="gender" value="male"> Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <br><br>
+          <label>Select your gender</label>
+          <input id="gender-male" type="radio" name="gender" value="male"> Male
+          <input id="gender-female" type="radio" name="gender" value="female"> Female
 
           <!-- Select menu -->
-          <label for="contact">Preferred Contact:</label>
+          <label for="contact">How should we contact you?</label>
           <select id="contact" name="contact">
             <option value="email">Email</option>
             <option value="phone">Phone</option>
             <option value="sms">SMS</option>
           </select>
-          <br><br>
 
           <!-- Multiline text box + submit -->
-          <label for="comments">Comments:</label><br>
-          <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br>
+          <label for="comments">Tell us the reason of your visit today:</label>
+          <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
 
-          <button type="submit">Sign Up</button>
+          <input type="submit" value="Sign up">
         </fieldset>
       </form>
     </main>

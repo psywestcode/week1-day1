@@ -71,6 +71,27 @@
     color: #753a30;               /* match theme accent */
     }
 
+    /* ── FORM styling for page3 (pp.22–27) ── */
+    label {
+    display: block;               /* put each label/control group on its own line */
+    margin: 15px 0 0 0;           /* space between groups */
+    }
+    input {
+    width: 300px;                 /* widen text/email/tel inputs */
+    }
+    input[type="radio"] {
+    width: 25px;                  /* radio control width */
+    }
+    textarea {
+    width: 300px;                 /* extend comment box */
+    }
+    input[type="submit"],
+    button[type="submit"] {
+    display: block;               /* submit on its own line */
+    margin: 20px 10px 0 0;        /* vertical spacing */
+    width: 100px;                 /* button width */
+    }
+
     /* ── Slides 28–29: Footer styling ── */
     footer {
       height: 40px;
