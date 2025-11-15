@@ -49,6 +49,28 @@
       font-family: arial;    /* match slide example */
     }
 
+    /* ── TABLE styling for page2 (pp.17–21) ── */
+    table {
+    margin-top: 35px;
+    border-collapse: collapse;
+    }
+    table, caption, th, td {
+    border: 1px solid #000;       /* replaces HTML border="1" */
+    }
+    th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;           /* align cell contents */
+    padding: 8px;                 /* inner spacing */
+    }
+    caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;               /* match theme accent */
+    }
+
     /* ── Slides 28–29: Footer styling ── */
     footer {
       height: 40px;
