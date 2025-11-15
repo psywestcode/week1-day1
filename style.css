@@ -1,0 +1,57 @@
+
+    /* ── Slides 11–16: Header background image + sizing/position/no-repeat ── */
+    header {
+      background: url(images/central_park.jpg) 0 -200px no-repeat; /* stop tiling */
+      background-size: 1500px;
+      height: 400px;
+
+      /* ── Slides 18 & 20: Make site name readable and positioned ── */
+      color: #fff;
+      font-size: 60px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 100px;
+      padding-left: 100px;
+      margin: 0;
+    }
+
+    /* ── Slides 22–23: Horizontal nav list + spacing + link states ── */
+    nav ul {
+      margin: 0;         /* remove default UL spacing */
+      padding: 0;
+    }
+    nav li {
+      list-style-type: none;  /* remove bullets (slide 22) */
+      display: inline;        /* horizontal items (slide 22) */
+      padding: 0 20px;        /* spacing between labels (slide 23) */
+    }
+    /* Link styles (must be in this order per slide 23) */
+    nav a { text-decoration: none; }     /* remove underline */
+    nav a:link    { color: #418bd3; }    /* before click */
+    nav a:visited { color: #333333; }    /* after click */
+    nav a:hover   { color: #7aacc7; }    /* mouse over */
+    nav a:active  { color: #753a30; }    /* mouse down */
+
+    /* ── Slides 24–25: Nav bar container ── */
+    nav {
+      background-color: rgb(255, 245, 233);
+      height: 50px;
+      text-align: center;    /* centers inline <li> elements */
+      padding-top: 2px;      /* small vertical nudge */
+    }
+
+    /* ── Slides 26–27: Main area + contextual <h1> styling ── */
+    main { height: 400px; }  /* demo height for the exercise */
+    main h1 {
+      color: rgb(129, 141, 179);
+      font-family: arial;    /* match slide example */
+    }
+
+    /* ── Slides 28–29: Footer styling ── */
+    footer {
+      height: 40px;
+      background-color: rgb(129, 141, 179);
+      text-align: center;
+      padding-top: 20px;
+      color: rgb(211, 218, 240);
+    }
