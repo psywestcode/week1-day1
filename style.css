@@ -92,6 +92,10 @@
     width: 100px;                 /* button width */
     }
 
+    main #album #photo img {
+      width: 200px;
+    }
+
     /* ── Slides 28–29: Footer styling ── */
     footer {
       height: 40px;
